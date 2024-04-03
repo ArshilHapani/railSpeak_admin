@@ -28,7 +28,7 @@ export const appRouter = router({
           algorithm: "HS512",
           expiresIn: "1h",
         });
-        cookies().set("token", token, { httpOnly: true });
+        cookies().set("token", token);
         return !!adminId;
       } catch (error: any) {
         throw new Error(error.message);
