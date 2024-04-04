@@ -45,10 +45,10 @@ const DeleteStationModal = ({ handleClose, open, station }: Props) => {
         {(onClose) => (
           <>
             <ModalHeader className="flex flex-col gap-1">
-              Modal Delete
+              Confirmation
             </ModalHeader>
             <ModalBody>
-              <h1 className="text-2xl text-gray-700">
+              <h1 className="text-xl text-gray-700">
                 Are you sure you want to delete this station?{" "}
                 <b className="font-bold text-black">{station.stationName}</b>
               </h1>
@@ -57,7 +57,7 @@ const DeleteStationModal = ({ handleClose, open, station }: Props) => {
               <Button
                 isDisabled={deleteTrpc.isPending}
                 color="success"
-                variant="light"
+                variant="bordered"
                 onPress={onClose}
               >
                 Close
