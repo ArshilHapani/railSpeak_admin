@@ -40,7 +40,7 @@ const HomePage = async () => {
                 <div>
                   <h2 className="text-2xl">{station.stationName}</h2>
                   <p className="text-gray-700 text-xl mt-2">
-                    {station.BroadCaster[0].username}
+                    {station.BroadCaster[0]?.username}
                   </p>
                 </div>
                 <div className="flex gap-3">
