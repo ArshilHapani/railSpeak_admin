@@ -15,7 +15,7 @@ model Admin {
 
 model Station {
   id          String        @id @default(auto()) @map("_id") @db.ObjectId
-  stationName String
+  stationName String        @unique
   BroadCaster BroadCaster[]
   AudioPreset AudioPreset[]
 }
